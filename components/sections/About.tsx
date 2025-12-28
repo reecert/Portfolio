@@ -1,9 +1,6 @@
-
 "use client";
 
 import { motion } from "framer-motion";
-import { Section } from "@/components/ui/Section";
-import { HankoBadge } from "@/components/ui/HankoBadge";
 import { portfolioData } from "@/data/content";
 
 export function About() {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -11,7 +11,6 @@ export function Navbar() {
     const { scrollY } = useScroll();
     const [isScrolled, setIsScrolled] = useState(false);
     const [hidden, setHidden] = useState(false);
-    const [activeHash, setActiveHash] = useState("");
 
     useMotionValueEvent(scrollY, "change", (latest) => {
         const previous = scrollY.getPrevious() || 0;

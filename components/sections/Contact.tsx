@@ -22,7 +22,7 @@ export function Contact() {
                     </div>
 
                     <h2 className="font-serif text-4xl md:text-5xl text-ink mb-6">
-                        Let's Connect
+                        Let&apos;s Connect
                     </h2>
                     <p className="text-lg text-gray-600 mb-8">
                         Always open to discussing new opportunities,<br />

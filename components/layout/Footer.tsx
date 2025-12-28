@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { portfolioData } from "@/data/content";
 
 export function Footer() {

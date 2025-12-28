@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { Section } from "@/components/ui/Section";
 import { portfolioData } from "@/data/content";
-import Image from "next/image";
 
 export function Projects() {
     return (
