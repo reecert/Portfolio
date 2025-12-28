@@ -21,9 +21,9 @@ export const portfolioData = {
     about: {
         title: "About Me",
         description: [
-            "I am a software engineer driven by curiosity and a desire to create meaningful digital interactions. My background spans from immersive virtual reality environments to robust cloud architectures.",
-            "I believe in the philosophy of continuous improvement applied to code and design. I strive to build software that is not only functional but also intuitive and delightful to use.",
-            "When I'm not coding, you can find me exploring new virtual worlds, optimizing my home lab, or enjoying a quiet cup of matcha.",
+            "I'm Reece, a Full Stack Engineer who loves bridging the gap between complex backend logic and immersive user experiences. My journey started in fintech at IDFC FIRST Bank, optimizing cloud infrastructure and automating workflows, and has since expanded into the realm of VR and AI research at the University of Houston-Clear Lake.",
+            "I believe software is more than just code, it's about storytelling and solving real-world problems. Whether I'm designing a scalable cloud architecture or fine-tuning 3D assets for a virtual lab, my goal is always the same: to build tools that feel intuitive, human, and impactful.",
+            "Beyond the screen, I'm an explorer at heart. You'll likely find me traveling to new cities, capturing stories through my camera lens, or staying active on the field. I thrive on challenges, whether it's debugging a distributed system or figuring out the next move in a complex puzzle.",
         ],
     },
     experience: [

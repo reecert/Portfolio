@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 type Particle = {
@@ -15,7 +15,14 @@ type Particle = {
 };
 
 export function PetalField() {
-    const [particles] = useState<Particle[]>(() => {
+    const [particles, setParticles] = useState<Particle[]>([]);
+    const { scrollY } = useScroll();
+
+    // Parallax effect based on scroll - front moves faster than back
+    const yFront = useTransform(scrollY, [0, 1000], [0, 200]);
+    const yBack = useTransform(scrollY, [0, 1000], [0, 50]);
+
+    useEffect(() => {
         const petalCount = 15;
         const moteCount = 20;
 
@@ -48,13 +55,9 @@ export function PetalField() {
                 xMovement: (Math.random() - 0.5) * 50,
             });
         }
-        return newParticles;
-    });
-    const { scrollY } = useScroll();
 
-    // Parallax effect based on scroll - front moves faster than back
-    const yFront = useTransform(scrollY, [0, 1000], [0, 200]);
-    const yBack = useTransform(scrollY, [0, 1000], [0, 50]);
+        setParticles(newParticles);
+    }, []);
 
     return (
         <div className="absolute inset-x-0 top-0 h-[100vh] pointer-events-none overflow-hidden z-0" aria-hidden="true">

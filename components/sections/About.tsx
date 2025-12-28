@@ -29,7 +29,7 @@ export function About() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
-                            className="text-lg md:text-xl leading-relaxed text-gray-600 dark:text-gray-300 font-light"
+                            className="text-lg md:text-xl leading-relaxed text-gray-600 font-light"
                         >
                             {paragraph}
                         </motion.p>
@@ -42,10 +42,6 @@ export function About() {
                         transition={{ duration: 0.6, delay: 0.4 }}
                         className="pt-8"
                     >
-                        {/* Signature or Hanko effect */}
-                        <div className="font-serif italic text-2xl text-ink/80 dark:text-gray-300">
-                            Reece.
-                        </div>
                     </motion.div>
                 </div>
             </div>
