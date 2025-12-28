@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sakura Portfolio 🌸
+
+A premium, handcrafted personal portfolio website with a Japanese Sakura / Spring in Kyoto theme. Built with Next.js 15 (App Router), TypeScript, and Tailwind CSS v4.
+
+## Features
+
+- **Aesthetic**: Off-white rice paper texture, subtle sakura animations, and elegant typography (Noto Serif JP + Inter).
+- **Responsive**: Mobile-first design that looks great on all devices.
+- **Performance**: Optimized images, lightweight animations (Framer Motion), and clean code.
+- **Content**: Centralized data management in `data/content.ts`.
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Build for production**:
+   ```bash
+   npm run build
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Content**: Edit `data/content.ts` to update your name, projects, and experience.
+- **Colors**: Adjust CSS variables in `app/globals.css`.
+- **Badge**: Modify `components/ui/HankoBadge.tsx` to change the initial in the stamp.
 
-## Learn More
+## Deployment on Vercel
 
-To learn more about Next.js, take a look at the following resources:
+1. Push this repository to GitHub.
+2. Import the project in Vercel.
+3. Vercel will automatically detect Next.js. Deploy!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Credits
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Fonts: Google Fonts (Inter, Noto Serif JP)
+- Icons: Lucide React (optional, not heavily used to maintain minimalism)
+- Texture: CSS Noise Generator
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+License: MIT
