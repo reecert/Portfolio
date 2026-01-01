@@ -31,44 +31,44 @@ export const portfolioData = {
             company: "University of Houston at Clear Lake",
             role: "Research Assistant",
             period: "Jan 2025 - Dec 2025",
-            description: "Developed an immersive virtual reality microbiology lab simulation using C#, C++, Unity, Unreal Engine, and Blender. Optimized 50+ high-fidelity 3D assets achieving 20% frame rate improvement.",
-            technologies: ["Unity", "Unreal Engine", "C#", "C++", "Blender"],
+            description: "Developed an immersive VR microbiology lab simulation using Unity C#, Unreal (C++/Blueprints) and Blender, enabling students to practice complex workflows like DNA sequencing in a safe virtual environment. Created and optimized 50+ 3D assets and environments, improving performance by 20% while collaborating with faculty and student teams using Agile methodologies (weekly sprint planning, standups, and iterative feedback).",
+            technologies: ["Unity", "C#", "Unreal Engine", "C++", "Blender", "Agile"],
         },
         {
             company: "IDFC FIRST Bank",
             role: "Software Engineer",
             period: "Jul 2022 - Jul 2024",
-            description: "Built internal automation tools and scripts to streamline operational workflows. Provisioned and managed AWS resources (EC2, S3, RDS, VPC, IAM) using Terraform/CloudFormation.",
-            technologies: ["AWS", "Terraform", "Python", "CloudWatch", "Lambda"],
+            description: "Built internal developer tooling (scripts/CLIs) to automate deployments and environment bootstrap (config generation, pre-flight validation, log capture + rollback helpers), cutting manual runbook steps by 30%. Authored Terraform/CloudFormation modules to standardize AWS infrastructure across environments (VPC, security groups, IAM, EC2/RDS/S3), reducing config drift and environment inconsistencies. Improved production reliability by adding CloudWatch alarms + log-based alerts and building scheduled operational checks (backup verification, compliance validations, key-rotation reminders), speeding up issue detection and reducing manual follow-ups.",
+            technologies: ["AWS", "Terraform", "CloudFormation", "Python", "CloudWatch", "CI/CD"],
         },
     ],
     projects: [
         {
-            title: "Ecommerce deals platform",
-            description: "High-availability real-time deals platform delivering low-latency content globally.",
-            impact: "Architected using Next.js 15 and TypeScript with Server-Side Rendering and Edge Caching.",
-            stack: ["Next.js 15", "TypeScript", "PostgreSQL", "AWS Lambda"],
+            title: "E-commerce deals platform",
+            description: "Architected a full-stack web app using React (Next.js 15) + TypeScript, shipping end-to-end features across UI, APIs, and database with production-ready code.",
+            impact: "Designed backend on AWS using S3, PostgreSQL, and ECS (Docker); used Kafka to stream user activity events for feeds and analytics. Provisioned infra with Terraform + CI/CD, implemented JWT auth + least-privilege IAM.",
+            stack: ["Next.js 15", "TypeScript", "AWS (S3, ECS)", "PostgreSQL", "Kafka", "Terraform"],
             link: "#",
             featured: true,
-            image: "/images/cloud-dash.jpg" // Placeholder
+            image: "/images/cloud-dash.jpg"
+        },
+        {
+            title: "PR Review Copilot",
+            description: "Created an AI PR Review Copilot using tool calling + GitHub API to analyze diffs and generate summaries, test suggestions, risk-ranked files, code smells, and security notes.",
+            impact: "Automated code review process with line-level citations.",
+            stack: ["AI Tool Calling", "GitHub API", "Automation"],
+            link: "#",
+            featured: true,
+            image: "/images/notes-app.jpg" // Using a placeholder for now
         },
         {
             title: "Android chat app",
-            description: "Secure, AI-integrated Android application with End-to-End encryption.",
-            impact: "Features Firebase Cloud Messaging for push notifications and cloud-native backend.",
-            stack: ["Java", "Kotlin", "Android SDK", "Firebase"],
+            description: "Shipped a real-time Android app using Java and Firebase Realtime Database, implementing message states, offline caching, and FCM push notifications.",
+            impact: "Developed a Spring Boot service using Firebase Admin SDK + PostgreSQL to provide chat metadata search, reporting moderation workflows, and secure admin APIs.",
+            stack: ["Java", "Firebase", "Spring Boot", "PostgreSQL"],
             link: "#",
             featured: true,
-            image: "/images/notes-app.jpg" // Placeholder
-        },
-        {
-            title: "Zenith VR Lab",
-            description: "Virtual microbiology laboratory simulator for remote education.",
-            impact: "Used by universities for distance learning. (Prior experience project)",
-            stack: ["Unity", "C#", "VR"],
-            link: "#",
-            featured: false,
-            image: "/images/vr-lab.jpg"
+            image: "/images/vr-lab.jpg" // Using a placeholder for now
         },
     ],
     skills: [
@@ -81,12 +81,24 @@ export const portfolioData = {
             items: ["React", "Angular", "Next.js", "HTML5", "CSS", "Tailwind"],
         },
         {
-            category: "Backend & Cloud",
-            items: ["Node.js", "Spring Boot", "AWS (Lambda, S3, RDS, DynamoDB)", "Docker", "Kubernetes", "Terraform"],
+            category: "Backend & APIs",
+            items: ["Node.js", "Express", "Fastify", "REST", "JSON", "WebSocket", "OAuth2/JWT", "GraphQL", "Spring Boot"],
         },
         {
-            category: "Databases & Tools",
-            items: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Kafka", "Jenkins", "GitHub Actions"],
+            category: "Cloud/DevOps",
+            items: ["AWS", "Azure", "Docker", "Kubernetes", "Terraform", "Jenkins", "GitHub Actions", "CI/CD pipelines"],
+        },
+        {
+            category: "Databases & Messaging",
+            items: ["PostgreSQL", "MySQL", "MongoDB", "DynamoDB", "Redis", "Oracle", "Apache Kafka"],
+        },
+        {
+            category: "Testing & Quality",
+            items: ["Jest", "PyTest", "Postman", "Automated Regression Testing", "Contract Testing", "Feature Flags", "Blue/Green"],
+        },
+        {
+            category: "Certifications",
+            items: ["AWS Certified Solutions Architect – Associate", "ServiceNow Certified System Administrator"],
         },
     ],
     writing: [
@@ -103,11 +115,13 @@ export const portfolioData = {
             degree: "Master of Science in Software Engineering",
             period: "Aug 2024 - Dec 2025",
             gpa: "3.93/4.0",
+            description: "Coursework: Requirements engineering, Software Architecture, System Design, Software testing, Agile/Scrum"
         },
         {
             school: "University of Mumbai",
             degree: "Bachelor of Engineering in Information Technology",
             period: "Aug 2018 - Jun 2022",
+            description: "Coursework: Big data analytics, Software Development, Machine Learning, Data Structures, DBMS"
         }
     ],
     hobbies: [
