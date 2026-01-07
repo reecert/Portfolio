@@ -48,7 +48,7 @@ export const portfolioData = {
             description: "Architected a full-stack web app using React (Next.js 15) + TypeScript, shipping end-to-end features across UI, APIs, and database with production-ready code.",
             impact: "Designed backend on AWS using S3, PostgreSQL, and ECS (Docker); used Kafka to stream user activity events for feeds and analytics. Provisioned infra with Terraform + CI/CD, implemented JWT auth + least-privilege IAM.",
             stack: ["Next.js 15", "TypeScript", "AWS (S3, ECS)", "PostgreSQL", "Kafka", "Terraform"],
-            link: "#",
+            link: "https://github.com/reecert/Project-deal",
             featured: true,
             image: "/images/cloud-dash.jpg"
         },
@@ -57,7 +57,7 @@ export const portfolioData = {
             description: "Created an AI PR Review Copilot using tool calling + GitHub API to analyze diffs and generate summaries, test suggestions, risk-ranked files, code smells, and security notes.",
             impact: "Automated code review process with line-level citations.",
             stack: ["AI Tool Calling", "GitHub API", "Automation"],
-            link: "#",
+            link: "https://github.com/reecert/PR-Review-Copilot",
             featured: true,
             image: "/images/notes-app.jpg" // Using a placeholder for now
         },
@@ -66,7 +66,7 @@ export const portfolioData = {
             description: "Shipped a real-time Android app using Java and Firebase Realtime Database, implementing message states, offline caching, and FCM push notifications.",
             impact: "Developed a Spring Boot service using Firebase Admin SDK + PostgreSQL to provide chat metadata search, reporting moderation workflows, and secure admin APIs.",
             stack: ["Java", "Firebase", "Spring Boot", "PostgreSQL"],
-            link: "#",
+            link: "https://github.com/reecert/Android-chat-app",
             featured: true,
             image: "/images/vr-lab.jpg" // Using a placeholder for now
         },

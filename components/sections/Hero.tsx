@@ -6,8 +6,12 @@ import { portfolioData } from "@/data/content";
 
 export function Hero() {
     return (
-        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
+        <section className="relative min-h-[90dvh] flex items-center justify-center overflow-hidden pt-20">
             <PetalField />
+
+            {/* Mobile Ambient Glow */}
+            <div className="absolute top-1/4 right-0 w-64 h-64 bg-sakura/10 rounded-full blur-3xl -z-10 lg:hidden pointer-events-none" />
+            <div className="absolute bottom-1/4 left-0 w-48 h-48 bg-gold/5 rounded-full blur-3xl -z-10 lg:hidden pointer-events-none" />
 
             <div className="container-custom relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
                 {/* Left Content (Text) */}
@@ -20,7 +24,7 @@ export function Hero() {
                         <span className="inline-block py-1 px-3 bg-sakura/10 text-sakura-dark font-sans text-sm tracking-widest uppercase rounded-full mb-4 border border-sakura/20">
                             {portfolioData.personal.tagline}
                         </span>
-                        <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] text-ink tracking-tight text-balance">
+                        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] text-ink tracking-tight text-balance">
                             {portfolioData.hero.headline}
                         </h1>
                     </motion.div>
@@ -38,17 +42,17 @@ export function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-                        className="flex flex-wrap gap-4 pt-2"
+                        className="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto"
                     >
                         <a
                             href="#projects"
-                            className="px-8 py-3 bg-ink text-white font-medium rounded-sm border border-transparent shadow-sm hover:shadow-md hover:bg-gray-800 transition-all duration-300"
+                            className="px-8 py-4 sm:py-3 bg-ink text-white font-medium rounded-sm border border-transparent shadow-sm hover:shadow-md hover:bg-gray-800 transition-all duration-300 text-center"
                         >
                             {portfolioData.hero.cta.primary}
                         </a>
                         <a
-                            href="/resume.pdf" // Placeholder path
-                            className="px-8 py-3 bg-transparent text-ink font-medium rounded-sm border border-gray-300 hover:border-gray-800 transition-all duration-300"
+                            href="/resume"
+                            className="px-8 py-4 sm:py-3 bg-transparent text-ink font-medium rounded-sm border border-gray-300 hover:border-gray-800 transition-all duration-300 text-center"
                         >
                             {portfolioData.hero.cta.secondary}
                         </a>

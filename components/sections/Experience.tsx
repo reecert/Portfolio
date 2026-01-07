@@ -27,14 +27,14 @@ export function Experience() {
 
                             <div className={`md:flex items-start justify-between gap-12 ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}>
                                 {/* Date Side */}
-                                <div className={`md:w-1/2 mb-2 md:mb-0 ${index % 2 === 0 ? "md:text-left pl-8" : "md:text-right pr-8"}`}>
+                                <div className={`md:w-1/2 mb-2 md:mb-0 ${index % 2 === 0 ? "md:text-left md:pl-8" : "md:text-right md:pr-8"}`}>
                                     <span className="font-mono text-sm text-gray-500 uppercase tracking-widest">
                                         {role.period}
                                     </span>
                                 </div>
 
                                 {/* Content Side */}
-                                <div className={`md:w-1/2 ${index % 2 === 0 ? "md:text-right pr-8" : "md:text-left pl-8"}`}>
+                                <div className={`md:w-1/2 ${index % 2 === 0 ? "md:text-right md:pr-8" : "md:text-left md:pl-8"}`}>
                                     <h3 className="text-xl font-bold text-ink">{role.company}</h3>
                                     <p className="text-sakura-dark font-medium mb-3">{role.role}</p>
                                     <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4 text-sm md:text-base">

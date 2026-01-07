@@ -28,11 +28,11 @@ export function Writing() {
                             transition={{ duration: 0.4, delay: index * 0.1 }}
                             className="block group"
                         >
-                            <article className="flex items-baseline justify-between border-b border-gray-200 pb-4 group-hover:border-sakura transition-colors">
+                            <article className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 md:gap-0 border-b border-gray-200 pb-4 group-hover:border-sakura transition-colors">
                                 <h3 className="text-lg md:text-xl font-medium text-ink group-hover:text-sakura-dark transition-colors">
                                     {item.title}
                                 </h3>
-                                <span className="shrink-0 text-sm text-gray-400 font-mono ml-4">
+                                <span className="shrink-0 text-sm text-gray-400 font-mono md:ml-4">
                                     {item.publisher}, {item.date}
                                 </span>
                             </article>

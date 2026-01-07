@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Noto_Serif_JP } from "next/font/google";
 import "./globals.css";
 
@@ -16,6 +16,12 @@ const notoSerifJP = Noto_Serif_JP({
 export const metadata: Metadata = {
   title: "Reece Raymond Tuscano | Software Engineer",
   description: "Portfolio of Reece Raymond Tuscano - Software Engineer, VR, Cloud.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default function RootLayout({

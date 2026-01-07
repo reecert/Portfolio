@@ -41,9 +41,6 @@ export function Projects() {
 
                         {/* Project Info */}
                         <div className="lg:col-span-5 flex flex-col items-start">
-                            <span className="text-sakura-dark font-mono text-xs tracking-widest uppercase mb-3">
-                                {project.featured ? "Featured Case Study" : "Project"}
-                            </span>
                             <h3 className="font-serif text-3xl md:text-4xl text-ink mb-4 group-hover:text-sakura-dark transition-colors duration-300">
                                 {project.title}
                             </h3>
@@ -69,7 +66,7 @@ export function Projects() {
                                 href={project.link}
                                 className="inline-flex items-center gap-2 text-ink font-medium hover:text-sakura transition-all group-hover:translate-x-1"
                             >
-                                View Case Study
+                                Link
                                 <span className="text-xl leading-none">→</span>
                             </a>
                         </div>
