@@ -1,149 +1,209 @@
 export const portfolioData = {
-    personal: {
-        name: "Reece Tuscano",
-        tagline: "Full Stack Software Engineer • AI & Cloud Computing",
-        intro: "Crafting digital serenity through code.",
-        email: "reecetuscano@gmail.com",
-        social: {
-            github: "https://github.com/reecert",
-            linkedin: "https://www.linkedin.com/in/reecetuscano/",
-            twitter: "#",
-        },
+  personal: {
+    name: "Reece Raymond Tuscano",
+    tagline: "Software Engineer | Full Stack | Cloud & DevOps",
+    intro:
+      "Building reliable, scalable systems with a focus on automation and user experience.",
+    email: "reecetuscano@email.com",
+    social: {
+      github: "https://github.com/reecert",
+      linkedin: "https://www.linkedin.com/in/reecetuscano",
+      twitter: "#",
     },
-    hero: {
-        headline: "Reece Tuscano",
-        subheadline: "Full Stack Software Engineer specializing in AI, Cloud Computing, and Scalable Architecture.",
-        cta: {
-            primary: "View Projects",
-            secondary: "Resume",
-        },
+    location: "Houston, TX",
+    phone: "+1-346-381-7002",
+  },
+  hero: {
+    headline: "Reece Raymond Tuscano",
+    subheadline:
+      "Software Engineer with 3+ years of experience delivering robust features, optimizing platforms, and automating workflows.",
+    cta: {
+      primary: "View Projects",
+      secondary: "Resume",
     },
-    about: {
-        title: "About Me",
-        description: [
-            "I'm Reece, a Full Stack Engineer who loves bridging the gap between complex backend logic and immersive user experiences. My journey started in fintech at IDFC FIRST Bank, optimizing cloud infrastructure and automating workflows, and has since expanded into the realm of VR and AI research at the University of Houston-Clear Lake.",
-            "I believe software is more than just code, it's about storytelling and solving real-world problems. Whether I'm designing a scalable cloud architecture or fine-tuning 3D assets for a virtual lab, my goal is always the same: to build tools that feel intuitive, human, and impactful.",
-            "Beyond the screen, I'm an explorer at heart. You'll likely find me traveling to new cities, capturing stories through my camera lens, or staying active on the field. I thrive on challenges, whether it's debugging a distributed system or figuring out the next move in a complex puzzle.",
-        ],
+  },
+  about: {
+    title: "About Me",
+    description: [
+      "I am a Software Engineer with over 3 years of experience on production teams, contributing to feature delivery, platform changes, and reliable releases. I am known for clear communication, requirement clarification, and writing documentation that makes work repeatable for others.",
+      "I am comfortable debugging issues, improving workflows through automation, and collaborating across teams to move from problems to improvements. My technical expertise spans across Full Stack development, Cloud/DevOps, and Data Engineering.",
+      "Currently based in Houston, TX, I hold a Master's in Software Engineering from the University of Houston–Clear Lake and a Bachelor's in Information Technology from the University of Mumbai.",
+    ],
+  },
+  experience: [
+    {
+      company: "University of Houston–Clear Lake",
+      role: "Research Assistant",
+      period: "Jan 2025 – Dec 2025",
+      description:
+        "Built an immersive VR lab simulation using Unity (C#), Unreal (C++/Blueprints), and Blender to enable training for complex microbiology workflows. Enhanced runtime performance by 20% by profiling and optimizing 50+ 3D assets/environments while collaborating with a research team in Agile sprints.",
+      technologies: ["Unity", "C#", "Unreal Engine", "C++", "Blender", "Agile"],
     },
-    experience: [
-        {
-            company: "University of Houston at Clear Lake",
-            role: "Research Assistant",
-            period: "Jan 2025 - Dec 2025",
-            description: "Developed an immersive VR microbiology lab simulation using Unity C#, Unreal (C++/Blueprints) and Blender, enabling students to practice complex workflows like DNA sequencing in a safe virtual environment. Created and optimized 50+ 3D assets and environments, improving performance by 20% while collaborating with faculty and student teams using Agile methodologies (weekly sprint planning, standups, and iterative feedback).",
-            technologies: ["Unity", "C#", "Unreal Engine", "C++", "Blender", "Agile"],
-        },
-        {
-            company: "IDFC FIRST Bank",
-            role: "Software Engineer",
-            period: "Jul 2022 - Jul 2024",
-            description: "Built internal developer tooling (scripts/CLIs) to automate deployments and environment bootstrap (config generation, pre-flight validation, log capture + rollback helpers), cutting manual runbook steps by 30%. Authored Terraform/CloudFormation modules to standardize AWS infrastructure across environments (VPC, security groups, IAM, EC2/RDS/S3), reducing config drift and environment inconsistencies. Improved production reliability by adding CloudWatch alarms + log-based alerts and building scheduled operational checks (backup verification, compliance validations, key-rotation reminders), speeding up issue detection and reducing manual follow-ups.",
-            technologies: ["AWS", "Terraform", "CloudFormation", "Python", "CloudWatch", "CI/CD"],
-        },
-    ],
-    projects: [
-        {
-            title: "E-commerce deals platform",
-            description: "Architected a full-stack web app using React (Next.js 15) + TypeScript, shipping end-to-end features across UI, APIs, and database with production-ready code.",
-            impact: "Designed backend on AWS using S3, PostgreSQL, and ECS (Docker); used Kafka to stream user activity events for feeds and analytics. Provisioned infra with Terraform + CI/CD, implemented JWT auth + least-privilege IAM.",
-            stack: ["Next.js 15", "TypeScript", "AWS (S3, ECS)", "PostgreSQL", "Kafka", "Terraform"],
-            link: "https://github.com/reecert/Project-deal",
-            featured: true,
-            image: "/images/cloud-dash.jpg"
-        },
-        {
-            title: "PR Review Copilot",
-            description: "Created an AI PR Review Copilot using tool calling + GitHub API to analyze diffs and generate summaries, test suggestions, risk-ranked files, code smells, and security notes.",
-            impact: "Automated code review process with line-level citations.",
-            stack: ["AI Tool Calling", "GitHub API", "Automation"],
-            link: "https://github.com/reecert/PR-Review-Copilot",
-            featured: true,
-            image: "/images/notes-app.jpg" // Using a placeholder for now
-        },
-        {
-            title: "Android chat app",
-            description: "Shipped a real-time Android app using Java and Firebase Realtime Database, implementing message states, offline caching, and FCM push notifications.",
-            impact: "Developed a Spring Boot service using Firebase Admin SDK + PostgreSQL to provide chat metadata search, reporting moderation workflows, and secure admin APIs.",
-            stack: ["Java", "Firebase", "Spring Boot", "PostgreSQL"],
-            link: "https://github.com/reecert/Android-chat-app",
-            featured: true,
-            image: "/images/vr-lab.jpg" // Using a placeholder for now
-        },
-    ],
-    skills: [
-        {
-            category: "Languages",
-            items: ["TypeScript", "JavaScript", "Python", "Java", "C#", "C", "C++", "SQL", "Kotlin"],
-        },
-        {
-            category: "Frontend",
-            items: ["React", "Angular", "Next.js", "HTML5", "CSS", "Tailwind"],
-        },
-        {
-            category: "Backend & APIs",
-            items: ["Node.js", "Express", "Fastify", "REST", "JSON", "WebSocket", "OAuth2/JWT", "GraphQL", "Spring Boot"],
-        },
-        {
-            category: "Cloud/DevOps",
-            items: ["AWS", "Azure", "Docker", "Kubernetes", "Terraform", "Jenkins", "GitHub Actions", "CI/CD pipelines"],
-        },
-        {
-            category: "Databases & Messaging",
-            items: ["PostgreSQL", "MySQL", "MongoDB", "DynamoDB", "Redis", "Oracle", "Apache Kafka"],
-        },
-        {
-            category: "Testing & Quality",
-            items: ["Jest", "PyTest", "Postman", "Automated Regression Testing", "Contract Testing", "Feature Flags", "Blue/Green"],
-        },
-        {
-            category: "Certifications",
-            items: ["AWS Certified Solutions Architect – Associate", "ServiceNow Certified System Administrator"],
-        },
-    ],
-    writing: [
-        {
-            title: "Agile Methodologies in Supply Chain Management",
-            publisher: "Springer Nature (Proceedings of CSCI’25)",
-            date: "2025",
-            link: "#",
-        },
-    ],
-    education: [
-        {
-            school: "University of Houston-Clear Lake",
-            degree: "Master of Science in Software Engineering",
-            period: "Aug 2024 - Dec 2025",
-            gpa: "3.93/4.0",
-            description: "Coursework: Requirements engineering, Software Architecture, System Design, Software testing, Agile/Scrum"
-        },
-        {
-            school: "University of Mumbai",
-            degree: "Bachelor of Engineering in Information Technology",
-            period: "Aug 2018 - Jun 2022",
-            description: "Coursework: Big data analytics, Software Development, Machine Learning, Data Structures, DBMS"
-        }
-    ],
-    hobbies: [
-        {
-            name: "Travel",
-            description: "Exploring new cultures and landscapes.",
-            icon: "travel"
-        },
-        {
-            name: "Sports",
-            description: "Staying active through team sports and fitness.",
-            icon: "activity"
-        },
-        {
-            name: "Videography",
-            description: "Capturing moments and storytelling through video.",
-            icon: "video"
-        },
-        {
-            name: "Problem Solving",
-            description: "Tackling complex challenges with creative solutions.",
-            icon: "puzzle"
-        }
-    ]
+    {
+      company: "IDFC FIRST Bank",
+      role: "Software Engineer",
+      period: "Jul 2022 – Jul 2024",
+      description:
+        "Contributed to ServiceNow change delivery by collaborating with business, operations, and engineering to refine requirements into user stories. Developed JavaScript-based validations and repeatable regression checks, reducing manual runbook steps by 30%. Designed and maintained test documentation enabling smoother UAT and faster sign-off.",
+      technologies: [
+        "JavaScript",
+        "ServiceNow",
+        "Automation",
+        "Regression Testing",
+        "Documentation",
+      ],
+    },
+  ],
+  projects: [
+    {
+      title: "E-commerce Deals Platform",
+      description:
+        "Shipped a Next.js 15 + TypeScript full-stack system with backend REST APIs, strict input validation, and consistent error handling to keep failures predictable, diagnosable, and faster to resolve in production.",
+      impact:
+        "Implemented release safety nets with CI/CD (Jenkins), deployed a containerized stack (Docker + Kubernetes) and integrated AWS S3 + PostgreSQL. Engineered ranking/personalization signals from user activity.",
+      stack: [
+        "Next.js 15",
+        "TypeScript",
+        "AWS (S3, RDS)",
+        "PostgreSQL",
+        "Docker",
+        "Kubernetes",
+        "Jenkins",
+        "Terraform",
+      ],
+      link: "https://reecert.github.io/Portfolio/", // Using portfolio link as placeholder or correct if known
+      featured: true,
+      image: "/images/cloud-dash.jpg",
+    },
+    {
+      title: "AI PR Review Copilot",
+      description:
+        "Implemented a GitHub API + LLM tool-calling workflow that ingests PR diffs and produces reviewer-ready outputs: change summary, impacted areas, risk notes, and recommended tests/checks.",
+      impact:
+        "Generated structured review guidance (risk-ranked files, checklist-style suggestions) to improve review consistency, speed up approvals, and reduce bug leakage into releases.",
+      stack: ["GitHub API", "LLM", "Tool Calling", "Automation"],
+      link: "#",
+      featured: true,
+      image: "/images/notes-app.jpg",
+    },
+    {
+      title: "Android Chat App",
+      description:
+        "Developed a real-time Android chat app (Java + Firebase) with offline caching, message delivery states, and push notifications with deep links.",
+      impact:
+        "Created an admin service (Spring Boot + PostgreSQL) supporting moderation and reporting workflows, exposing secure REST APIs and maintaining actionable logs for troubleshooting.",
+      stack: ["Java", "Firebase", "Spring Boot", "PostgreSQL", "Android"],
+      link: "#",
+      featured: true,
+      image: "/images/vr-lab.jpg",
+    },
+  ],
+  skills: [
+    {
+      category: "Languages",
+      items: [
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "Java",
+        "C#",
+        "SQL",
+        "C++",
+        "Bash/Shell",
+      ],
+    },
+    {
+      category: "Frameworks/Backend",
+      items: [
+        "React",
+        "Next.js",
+        "Node.js",
+        "Spring Boot",
+        "Django",
+        "Flask",
+        "REST APIs",
+        "OAuth2/JWT",
+      ],
+    },
+    {
+      category: "Cloud/DevOps",
+      items: [
+        "AWS (VPC, EC2, S3, RDS, Lambda)",
+        "Azure",
+        "GCP",
+        "Linux",
+        "Git",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Jenkins",
+      ],
+    },
+    {
+      category: "Data/Testing",
+      items: [
+        "PostgreSQL",
+        "DynamoDB",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Jest",
+        "Playwright",
+        "Postman",
+        "Selenium",
+      ],
+    },
+    {
+      category: "Certifications",
+      items: [
+        "AWS Solutions Architect – Associate",
+        "ServiceNow Certified System Administrator",
+      ],
+    },
+  ],
+  writing: [
+    {
+      title: "Agile Methodologies in Supply Chain Management",
+      publisher: "CSCI’25, Springer Nature",
+      date: "2025",
+      link: "#",
+    },
+  ],
+  education: [
+    {
+      school: "University of Houston–Clear Lake",
+      degree: "M.S. Software Engineering",
+      period: "Aug 2024 – Dec 2025",
+      gpa: "3.93/4.0",
+      description: "Houston, USA",
+    },
+    {
+      school: "University of Mumbai",
+      degree: "B.E. Information Technology",
+      period: "Aug 2018 – Jun 2022",
+      description: "Mumbai, India",
+    },
+  ],
+  hobbies: [
+    {
+      name: "Travel",
+      description: "Exploring new cultures and landscapes.",
+      icon: "travel",
+    },
+    {
+      name: "Sports",
+      description: "Staying active through team sports and fitness.",
+      icon: "activity",
+    },
+    {
+      name: "Videography",
+      description: "Capturing moments and storytelling through video.",
+      icon: "video",
+    },
+    {
+      name: "Problem Solving",
+      description: "Tackling complex challenges with creative solutions.",
+      icon: "puzzle",
+    },
+  ],
 };
