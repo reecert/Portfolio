@@ -34,22 +34,12 @@
   --font-serif: var(--font-noto-serif), ui-serif, Georgia, serif;
 }
 
-/* Force body background to be light */
 body {
-  background-color: var(--color-paper) !important;
+  background-color: #000 !important;
   color: var(--color-ink) !important;
   font-family: var(--font-sans);
 }
 
-/* Prevent dark mode overrides from Tailwind if user has system preference */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-paper: #faf7f2 !important;
-    --color-sakura: #f4b6c2 !important;
-    --color-ink: #1f1f1f !important;
-    --color-gold: #c8a96a !important;
-  }
-}
 
 /* Washi Paper Texture */
 body::before {

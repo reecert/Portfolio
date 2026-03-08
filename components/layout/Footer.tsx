@@ -4,13 +4,13 @@ export function Footer() {
     const year = new Date().getFullYear();
 
     return (
-        <footer className="border-t border-gray-200 bg-gray-50 py-12 md:py-16">
+        <footer className="border-t border-white/10 bg-black py-12 md:py-16">
             <div className="container-custom flex flex-col items-center justify-between gap-6 md:flex-row">
                 <div className="text-center md:text-left">
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-white/40">
                         © {year} {portfolioData.personal.name}. All rights reserved.
                     </p>
-                    <p className="mt-1 text-xs text-gray-400">
+                    <p className="mt-1 text-xs text-white/25">
                         Handcrafted with Next.js, Tailwind, & Sakura.
                     </p>
                 </div>
@@ -22,7 +22,7 @@ export function Footer() {
                             href={url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-sm font-medium capitalize text-gray-500 transition-colors hover:text-sakura"
+                            className="text-sm font-medium capitalize text-white/40 transition-colors hover:text-white"
                         >
                             {key}
                         </a>

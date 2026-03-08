@@ -59,9 +59,9 @@ export function Navbar() {
             animate={hidden ? "hidden" : "visible"}
             transition={{ duration: 0.35, ease: "easeInOut" }}
             className={cn(
-                "fixed top-0 left-0 right-0 z-50 flex items-center justify-between border-b transition-colors duration-300",
+                "fixed top-0 left-0 right-0 z-50 flex items-center justify-between border-b transition-all duration-300",
                 isScrolled || mobileMenuOpen
-                    ? "border-gray-200/50 bg-paper/80 backdrop-blur-md"
+                    ? "border-white/10 bg-black/90 backdrop-blur-md"
                     : "border-transparent bg-transparent"
             )}
         >
@@ -78,17 +78,20 @@ export function Navbar() {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className="relative text-sm font-medium tracking-wide text-ink/70 transition-colors hover:text-ink hover:underline hover:decoration-sakura hover:decoration-2 hover:underline-offset-4"
+                            className={cn(
+                                "relative text-sm font-medium tracking-wide transition-colors hover:underline hover:decoration-sakura hover:decoration-2 hover:underline-offset-4",
+                                "text-white/70 hover:text-white"
+                            )}
                         >
                             {link.name}
                         </Link>
                     ))}
-                    <div className="flex items-center gap-4 pl-4 border-l border-ink/10 ml-2">
+                    <div className={cn("flex items-center gap-4 pl-4 ml-2 border-l", isScrolled ? "border-ink/10" : "border-white/20")}>
                         <a
                             href={portfolioData.personal.social.github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-ink/60 hover:text-ink transition-colors"
+                            className="text-white/60 hover:text-white transition-colors"
                             aria-label="GitHub"
                         >
                             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -99,7 +102,7 @@ export function Navbar() {
                             href={portfolioData.personal.social.linkedin}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-ink/60 hover:text-ink transition-colors"
+                            className="text-white/60 hover:text-white transition-colors"
                             aria-label="LinkedIn"
                         >
                             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -114,7 +117,7 @@ export function Navbar() {
                 {/* Mobile Menu Toggle */}
                 <button
                     onClick={toggleMobileMenu}
-                    className="md:hidden relative z-[70] p-2 text-ink hover:text-sakura-dark transition-colors focus:outline-none"
+                    className="md:hidden relative z-[70] p-2 transition-colors focus:outline-none text-white"
                     aria-label="Toggle menu"
                 >
                     <div className="flex flex-col gap-1.5 w-6">
@@ -139,7 +142,7 @@ export function Navbar() {
                 initial={{ opacity: 0, y: "-100%" }}
                 animate={mobileMenuOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: "-100%" }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="fixed inset-0 z-[60] bg-[#faf7f2] pt-20 px-6 md:hidden flex flex-col items-center justify-start gap-6"
+                className="fixed inset-0 z-[60] bg-black pt-20 px-6 md:hidden flex flex-col items-center justify-start gap-6"
                 style={{ pointerEvents: mobileMenuOpen ? "auto" : "none" }}
             >
                 <nav className="flex flex-col items-center gap-4 w-full">
@@ -148,7 +151,7 @@ export function Navbar() {
                             key={link.name}
                             href={link.href}
                             onClick={closeMobileMenu}
-                            className="text-lg font-medium tracking-wide text-ink hover:text-sakura-dark transition-colors py-1"
+                            className="text-lg font-medium tracking-wide text-white/70 hover:text-white transition-colors py-1"
                         >
                             {link.name}
                         </Link>
@@ -162,7 +165,7 @@ export function Navbar() {
                         href={portfolioData.personal.social.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-ink/60 hover:text-ink transition-colors p-2"
+                        className="text-white/60 hover:text-white transition-colors p-2"
                         aria-label="GitHub"
                     >
                         <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -173,7 +176,7 @@ export function Navbar() {
                         href={portfolioData.personal.social.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-ink/60 hover:text-ink transition-colors p-2"
+                        className="text-white/60 hover:text-white transition-colors p-2"
                         aria-label="LinkedIn"
                     >
                         <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

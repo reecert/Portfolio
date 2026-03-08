@@ -10,7 +10,7 @@ export function HankoBadge({ className }: { className?: string }) {
             aria-label="Signature Hanko Stamp"
         >
             <div className="absolute inset-0 border border-red-800/20 m-0.5 rounded-[1px]" />
-            <span className="font-serif text-2xl font-bold leading-none select-none">
+            <span className="font-sans text-2xl font-bold leading-none select-none">
                 R
             </span>
         </div>

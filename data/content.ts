@@ -1,14 +1,13 @@
 export const portfolioData = {
   personal: {
     name: "Reece Raymond Tuscano",
-    tagline: "Software Engineer | Full Stack | Cloud & DevOps",
+    tagline: "DevOps | Full Stack Developer | Software Engineer",
     intro:
-      "Building reliable, scalable systems with a focus on automation and user experience.",
+      "Building and maintaining CI/CD pipelines, managing cloud infrastructure, and developing scalable full-stack web applications.",
     email: "reecetuscano@email.com",
     social: {
       github: "https://github.com/reecert",
       linkedin: "https://www.linkedin.com/in/reecetuscano",
-      twitter: "#",
     },
     location: "Houston, TX",
     phone: "+1-346-381-7002",
@@ -16,7 +15,7 @@ export const portfolioData = {
   hero: {
     headline: "Reece Raymond Tuscano",
     subheadline:
-      "Software Engineer with 3+ years of experience delivering robust features, optimizing platforms, and automating workflows.",
+      "Software Engineer specializing in robust Full-Stack systems, automated CI/CD pipelines, and cloud-native infrastructure.",
     cta: {
       primary: "View Projects",
       secondary: "Resume",
@@ -25,18 +24,26 @@ export const portfolioData = {
   about: {
     title: "About Me",
     description: [
-      "I am a Software Engineer with over 3 years of experience on production teams, contributing to feature delivery, platform changes, and reliable releases. I am known for clear communication, requirement clarification, and writing documentation that makes work repeatable for others.",
-      "I am comfortable debugging issues, improving workflows through automation, and collaborating across teams to move from problems to improvements. My technical expertise spans across Full Stack development, Cloud/DevOps, and Data Engineering.",
+      "I am a Software Engineer experienced in creating and scaling full-stack solutions, designing robust CI/CD automations, and building cloud-native infrastructure. My technical foundation spans front-end development, backend REST APIs, and DevOps practices.",
+      "I am comfortable building VR lab simulations for educational workflows, optimizing database queries for high-throughput platforms, or deploying secure, containerized applications. My focus is always on creating repeatable structures, automating toil, and building reliable releases.",
       "Currently based in Houston, TX, I hold a Master's in Software Engineering from the University of Houston–Clear Lake and a Bachelor's in Information Technology from the University of Mumbai.",
     ],
   },
   experience: [
     {
+      company: "EVU Inc.",
+      role: "DevOps Engineer Intern",
+      period: "Feb 2026 – Present",
+      description:
+        "- Building and maintaining CI/CD pipelines GitHub Actions to automate build, test, and deployment workflows.\n- Managing cloud infrastructure GCP, environment configuration, and containerized services (Docker) to ensure stable and scalable deployments across staging and production.\n- Monitoring system performance, troubleshooting deployment issues, and implementing security best practices to enhance infrastructure reliability and minimize downtime.",
+      technologies: ["GitHub Actions", "GCP", "Docker", "CI/CD", "Linux"],
+    },
+    {
       company: "University of Houston–Clear Lake",
-      role: "Research Assistant",
+      role: "Software Engineer (Research Assistant)",
       period: "Jan 2025 – Dec 2025",
       description:
-        "Built an immersive VR lab simulation using Unity (C#), Unreal (C++/Blueprints), and Blender to enable training for complex microbiology workflows. Enhanced runtime performance by 20% by profiling and optimizing 50+ 3D assets/environments while collaborating with a research team in Agile sprints.",
+        "- Built an immersive VR lab simulation using Unity C#, Unreal (C++/Blueprints), Blender to enable training for complex microbiology workflows like DNA sequencing, helping students practice lab steps safely and build confidence before limited in-person lab time.\n- Enhanced runtime performance by 20% by profiling and optimizing 50+ 3D assets/environments while collaborating with a research team in Agile sprints (planning, standups, iterative reviews) and incorporating stakeholder feedback into each release.",
       technologies: ["Unity", "C#", "Unreal Engine", "C++", "Blender", "Agile"],
     },
     {
@@ -44,13 +51,13 @@ export const portfolioData = {
       role: "Software Engineer",
       period: "Jul 2022 – Jul 2024",
       description:
-        "Contributed to ServiceNow change delivery by collaborating with business, operations, and engineering to refine requirements into user stories. Developed JavaScript-based validations and repeatable regression checks, reducing manual runbook steps by 30%. Designed and maintained test documentation enabling smoother UAT and faster sign-off.",
+        "- Developed JavaScript-based solutions on the ServiceNow platform, implementing business logic, form validations, workflow automations, and REST integrations to support internal banking operations.\n- Built automated regression checks and reusable validation scripts, reducing manual verification effort by 30% and improving release reliability.\n- Collaborated with product managers and cross-functional teams to translate business requirements into technical designs, user stories, and testable acceptance criteria.",
       technologies: [
         "JavaScript",
         "ServiceNow",
-        "Automation",
+        "REST APIs",
         "Regression Testing",
-        "Documentation",
+        "Automation",
       ],
     },
   ],
@@ -58,29 +65,27 @@ export const portfolioData = {
     {
       title: "E-commerce Deals Platform",
       description:
-        "Shipped a Next.js 15 + TypeScript full-stack system with backend REST APIs, strict input validation, and consistent error handling to keep failures predictable, diagnosable, and faster to resolve in production.",
-      impact:
-        "Implemented release safety nets with CI/CD (Jenkins), deployed a containerized stack (Docker + Kubernetes) and integrated AWS S3 + PostgreSQL. Engineered ranking/personalization signals from user activity.",
+        "- Shipped a Next.js 15 + TypeScript full-stack system with backend REST APIs, strict input validation, and consistent error handling to keep failures predictable, diagnosable, and faster to resolve in production.\n- Implemented release safety nets with CI/CD (Jenkins): lint/type checks, Jest unit tests, Playwright E2E suites, plus repeatable deployment steps and rollback readiness to protect availability during releases.\n- Deployed a containerized stack (Docker + Kubernetes) and integrated AWS S3 (media) + PostgreSQL (core data); used Terraform modules and environment parity practices for reproducible, consistent infrastructure.",
+      impact: "",
       stack: [
         "Next.js 15",
         "TypeScript",
-        "AWS (S3, RDS)",
+        "AWS (S3)",
         "PostgreSQL",
         "Docker",
         "Kubernetes",
         "Jenkins",
         "Terraform",
       ],
-      link: "https://reecert.github.io/Portfolio/", // Using portfolio link as placeholder or correct if known
+      link: "https://reecert.github.io/Portfolio/",
       featured: true,
       image: "/images/cloud-dash.jpg",
     },
     {
       title: "AI PR Review Copilot",
       description:
-        "Implemented a GitHub API + LLM tool-calling workflow that ingests PR diffs and produces reviewer-ready outputs: change summary, impacted areas, risk notes, and recommended tests/checks.",
-      impact:
-        "Generated structured review guidance (risk-ranked files, checklist-style suggestions) to improve review consistency, speed up approvals, and reduce bug leakage into releases.",
+        "- Implemented a GitHub API + LLM tool-calling workflow that ingests PR diffs and produces reviewer-ready outputs: change summary, impacted areas, risk notes, and recommended tests/checks.\n- Generated structured review guidance (risk-ranked files, checklist-style suggestions, and common failure patterns) to improve review consistency, speed up approvals, and reduce bug leakage into releases.",
+      impact: "",
       stack: ["GitHub API", "LLM", "Tool Calling", "Automation"],
       link: "#",
       featured: true,
@@ -89,9 +94,8 @@ export const portfolioData = {
     {
       title: "Android Chat App",
       description:
-        "Developed a real-time Android chat app (Java + Firebase) with offline caching, message delivery states, and push notifications with deep links.",
-      impact:
-        "Created an admin service (Spring Boot + PostgreSQL) supporting moderation and reporting workflows, exposing secure REST APIs and maintaining actionable logs for troubleshooting.",
+        "- Developed a real-time Android chat app (Java + Firebase) with offline caching, message delivery states (sent/delivered/read), and push notifications with deep links to conversations.\n- Created an admin service (Spring Boot + PostgreSQL) supporting moderation and reporting workflows (search, review, and action), exposing secure REST APIs and maintaining actionable logs for troubleshooting.",
+      impact: "",
       stack: ["Java", "Firebase", "Spring Boot", "PostgreSQL", "Android"],
       link: "#",
       featured: true,
@@ -128,27 +132,28 @@ export const portfolioData = {
     {
       category: "Cloud/DevOps",
       items: [
-        "AWS (VPC, EC2, S3, RDS, Lambda)",
+        "AWS",
         "Azure",
         "GCP",
         "Linux",
         "Git",
         "Docker",
-        "Kubernetes",
+        "Kubernetes (K8s)",
         "Terraform",
         "Jenkins",
+        "Ansible",
       ],
     },
     {
       category: "Data/Testing",
       items: [
-        "PostgreSQL",
+        "PostgreSQL (RDS)",
         "DynamoDB",
         "MySQL",
         "MongoDB",
         "Redis",
         "Jest",
-        "Playwright",
+        "Playwright (E2E)",
         "Postman",
         "Selenium",
       ],
@@ -163,7 +168,7 @@ export const portfolioData = {
   ],
   writing: [
     {
-      title: "Agile Methodologies in Supply Chain Management",
+      title: "Agile Methodologies in Supply Chain Management: A Systematic Review of Practices and Enabling Technologies",
       publisher: "CSCI’25, Springer Nature",
       date: "2025",
       link: "#",

@@ -1,15 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Noto_Serif_JP } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
-  subsets: ["latin"],
-});
-
-const notoSerifJP = Noto_Serif_JP({
-  variable: "--font-noto-serif-jp",
-  weight: ["300", "400", "500", "700"],
   subsets: ["latin"],
 });
 
@@ -32,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${notoSerifJP.variable} antialiased bg-paper text-ink font-sans`}
+        className={`${inter.variable} antialiased bg-paper text-ink font-sans`}
       >
         {children}
       </body>
