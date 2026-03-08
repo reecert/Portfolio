@@ -56,6 +56,7 @@ export function PetalField() {
             });
         }
 
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setParticles(newParticles);
     }, []);
 
