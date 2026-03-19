@@ -64,9 +64,15 @@ function ExperienceEntry({ role, index }: {
                 {/* Content side */}
                 <div className={`md:w-1/2 ${index % 2 === 0 ? "md:pr-8" : "md:pl-8"}`}>
                     <h3 className="text-2xl font-bold text-white tracking-tight">{role.company}</h3>
-                    <p className="text-white/40 text-sm font-medium uppercase tracking-widest mt-1 mb-4">
+                    <p className="text-white/40 text-sm font-medium uppercase tracking-widest mt-1">
                         {role.role}
                     </p>
+                    {"location" in role && role.location && (
+                        <p className="text-white/25 text-xs font-mono uppercase tracking-widest mt-0.5 mb-4">
+                            {role.location}
+                        </p>
+                    )}
+                    {!("location" in role) && <div className="mb-4" />}
 
                     {/* Word-by-word reveal */}
                     <p className="flex flex-wrap leading-relaxed text-sm md:text-base">

@@ -24,34 +24,37 @@ export const portfolioData = {
   about: {
     title: "About Me",
     description: [
-      "I am a Software Engineer experienced in creating and scaling full-stack solutions, designing robust CI/CD automations, and building cloud-native infrastructure. My technical foundation spans front-end development, backend REST APIs, and DevOps practices.",
-      "I am comfortable building VR lab simulations for educational workflows, optimizing database queries for high-throughput platforms, or deploying secure, containerized applications. My focus is always on creating repeatable structures, automating toil, and building reliable releases.",
-      "Currently based in Houston, TX, I hold a Master's in Software Engineering from the University of Houston–Clear Lake and a Bachelor's in Information Technology from the University of Mumbai.",
+      "I'm a software engineer who enjoys working across the full stack — building the product, setting up the infrastructure behind it, and making sure it ships reliably. I've spent two years at IDFC FIRST Bank translating vague requests from non-technical banking teams into tools used by 40,000+ employees, led a VR research project at UHCL where I managed a small team, owned sprint planning, and presented directly to faculty stakeholders, and currently work at EVU where I identified infrastructure gaps nobody was tracking and built the solutions myself.",
+      "On the side, I designed and built an e-commerce deals platform end-to-end — making every architectural decision from service boundaries to ranking algorithms to failure recovery — not because someone told me to, but because I wanted to understand how real systems work at every layer.",
+      "I care about writing code that other people can maintain, building systems that fail gracefully, and asking the right questions before jumping into solutions. I hold a Master's in Software Engineering from the University of Houston–Clear Lake (3.93 GPA), a Bachelor's in IT from the University of Mumbai, and AWS Solutions Architect and Azure Administrator certifications. Based in Houston, TX and open to full-stack, backend, DevOps, and platform engineering roles.",
     ],
   },
   experience: [
     {
       company: "EVU Inc.",
-      role: "DevOps Engineer Intern",
+      role: "DevOps Engineer",
       period: "Feb 2026 – Present",
+      location: "NYC, USA",
       description:
-        "- Building and maintaining CI/CD pipelines GitHub Actions to automate build, test, and deployment workflows.\n- Managing cloud infrastructure GCP, environment configuration, and containerized services (Docker) to ensure stable and scalable deployments across staging and production.\n- Monitoring system performance, troubleshooting deployment issues, and implementing security best practices to enhance infrastructure reliability and minimize downtime.",
-      technologies: ["GitHub Actions", "GCP", "Docker", "CI/CD", "Linux"],
+        "- Designed and implemented 3 CI/CD pipelines using GitHub Actions, eliminating manual deployment bottlenecks that delayed feature releases, reducing the deployment time from ~2 hours to less than 15 minutes.\n- Containerized applications with Docker and deployed to AWS, eliminating environment mismatch failures across staging and production that caused repeated post-release bugs, improving the deployment success rate from ~70% to over 99%.\n- Built a complete observability stack (Prometheus, Loki, Grafana) that enabled the team to detect incidents in under 10 minutes.",
+      technologies: ["GitHub Actions", "AWS", "Docker", "Prometheus", "Loki", "Grafana", "CI/CD", "Linux"],
     },
     {
       company: "University of Houston–Clear Lake",
       role: "Software Engineer (Research Assistant)",
       period: "Jan 2025 – Dec 2025",
+      location: "Houston, USA",
       description:
-        "- Built an immersive VR lab simulation using Unity C#, Unreal (C++/Blueprints), Blender to enable training for complex microbiology workflows like DNA sequencing, helping students practice lab steps safely and build confidence before limited in-person lab time.\n- Enhanced runtime performance by 20% by profiling and optimizing 50+ 3D assets/environments while collaborating with a research team in Agile sprints (planning, standups, iterative reviews) and incorporating stakeholder feedback into each release.",
+        "- Drove development of an immersive VR lab simulation (Unity C#, Unreal C++/Blueprints, Blender) with 2 undergraduate RAs, owning architecture decisions, managing the backlog, planning sprints, and presenting demos directly to faculty stakeholders.\n- Enabled microbiology students to practice complex workflows like DNA sequencing before limited in-person lab sessions, created 50+ 3D assets through iterative faculty feedback cycles, improving runtime performance by 20% and eliminating motion sickness triggers.",
       technologies: ["Unity", "C#", "Unreal Engine", "C++", "Blender", "Agile"],
     },
     {
       company: "IDFC FIRST Bank",
       role: "Software Engineer",
       period: "Jul 2022 – Jul 2024",
+      location: "Mumbai, India",
       description:
-        "- Developed JavaScript-based solutions on the ServiceNow platform, implementing business logic, form validations, workflow automations, and REST integrations to support internal banking operations.\n- Built automated regression checks and reusable validation scripts, reducing manual verification effort by 30% and improving release reliability.\n- Collaborated with product managers and cross-functional teams to translate business requirements into technical designs, user stories, and testable acceptance criteria.",
+        "- Developed JavaScript-driven workflow automations on the ServiceNow platform, connecting internal systems across departments and replacing manual ticket routing and email-based approvals for operations serving 40,000+ employees.\n- Built automated regression checks and reusable validation scripts, reducing manual testing effort by 30% and shortening release cycles.\n- Worked alongside the PM to break down vague requests from non-technical banking teams into actionable technical requirements, helping shape solution design and scope. Contributed to the delivery of 15+ workflow modules over 2 years.",
       technologies: [
         "JavaScript",
         "ServiceNow",
@@ -64,37 +67,39 @@ export const portfolioData = {
   projects: [
     {
       title: "E-commerce Deals Platform",
+      period: "Sep 2025 – Jan 2026",
       description:
-        "- Shipped a Next.js 15 + TypeScript full-stack system with backend REST APIs, strict input validation, and consistent error handling to keep failures predictable, diagnosable, and faster to resolve in production.\n- Implemented release safety nets with CI/CD (Jenkins): lint/type checks, Jest unit tests, Playwright E2E suites, plus repeatable deployment steps and rollback readiness to protect availability during releases.\n- Deployed a containerized stack (Docker + Kubernetes) and integrated AWS S3 (media) + PostgreSQL (core data); used Terraform modules and environment parity practices for reproducible, consistent infrastructure.",
+        "- Shipped a deals discovery platform (Next.js, Flutter SDK) with personalized feeds, fuzzy search via trigram indexes, threaded comments, and voting with auth designed to gracefully serve both anonymous and logged-in users from the same endpoints.\n- Developed 15 backend modules (NestJS, PostgreSQL, Redis) with a composite ranking formula balancing popularity, recency decay, and engagement. Scheduled refreshers process active deals in 1000-record chunks every 30 minutes.\n- Designed the infrastructure as 3 services across separate VMs behind Cloudflare CDN, with load balancing, auto-scaling, SHA-tagged deployments for instant rollback, and OpenAPI contract validation on every PR to prevent breaking changes.",
       impact: "",
       stack: [
-        "Next.js 15",
-        "TypeScript",
-        "AWS (S3)",
+        "Next.js",
+        "Flutter",
+        "NestJS",
         "PostgreSQL",
+        "Redis",
+        "Cloudflare CDN",
         "Docker",
-        "Kubernetes",
-        "Jenkins",
-        "Terraform",
       ],
       link: "https://reecert.github.io/Portfolio/",
       featured: true,
       image: "/images/cloud-dash.jpg",
     },
     {
-      title: "AI PR Review Copilot",
+      title: "AI Incident Response Agent",
+      period: "May 2025 – Aug 2025",
       description:
-        "- Implemented a GitHub API + LLM tool-calling workflow that ingests PR diffs and produces reviewer-ready outputs: change summary, impacted areas, risk notes, and recommended tests/checks.\n- Generated structured review guidance (risk-ranked files, checklist-style suggestions, and common failure patterns) to improve review consistency, speed up approvals, and reduce bug leakage into releases.",
+        "- Built an AI agent that monitors infrastructure metrics and logs, diagnoses incidents through multi-step tool-calling (query deploys, parse errors, check service health), and posts structured root-cause reports to Slack with suggested remediation.\n- Orchestrated the pipeline through n8n workflows integrating Prometheus, Loki, GitHub API, and an LLM, reducing manual incident triage from first-alert-to-diagnosis to under 5 minutes.",
       impact: "",
-      stack: ["GitHub API", "LLM", "Tool Calling", "Automation"],
+      stack: ["n8n", "Prometheus", "Loki", "GitHub API", "LLM", "Slack API"],
       link: "#",
       featured: true,
       image: "/images/notes-app.jpg",
     },
     {
       title: "Android Chat App",
+      period: "Nov 2024 – Feb 2025",
       description:
-        "- Developed a real-time Android chat app (Java + Firebase) with offline caching, message delivery states (sent/delivered/read), and push notifications with deep links to conversations.\n- Created an admin service (Spring Boot + PostgreSQL) supporting moderation and reporting workflows (search, review, and action), exposing secure REST APIs and maintaining actionable logs for troubleshooting.",
+        "- Developed a real-time Android chat app (Java, Firebase) with offline caching, message delivery states (sent/delivered/read), and push notifications with deep links to conversations.\n- Built a separate admin service (Spring Boot, PostgreSQL) for content moderation with search, review, and action workflows, role-based access, and audit logging.",
       impact: "",
       stack: ["Java", "Firebase", "Spring Boot", "PostgreSQL", "Android"],
       link: "#",
@@ -162,6 +167,7 @@ export const portfolioData = {
       category: "Certifications",
       items: [
         "AWS Solutions Architect – Associate",
+        "Azure Administrator Associate",
         "ServiceNow Certified System Administrator",
       ],
     },

@@ -7,7 +7,7 @@ import { portfolioData } from "@/data/content";
 const thumbnails = [
   // E-commerce Deals Platform
   "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80",
-  // AI PR Review Copilot
+  // AI Incident Response Agent
   "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80",
   // Android Chat App
   "https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=600&q=80",
