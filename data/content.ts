@@ -24,9 +24,8 @@ export const portfolioData = {
   about: {
     title: "About Me",
     description: [
-      "I'm a software engineer who enjoys working across the full stack — building the product, setting up the infrastructure behind it, and making sure it ships reliably. I've spent two years at IDFC FIRST Bank translating vague requests from non-technical banking teams into tools used by 40,000+ employees, led a VR research project at UHCL where I managed a small team, owned sprint planning, and presented directly to faculty stakeholders, and currently work at EVU where I identified infrastructure gaps nobody was tracking and built the solutions myself.",
-      "On the side, I designed and built an e-commerce deals platform end-to-end — making every architectural decision from service boundaries to ranking algorithms to failure recovery — not because someone told me to, but because I wanted to understand how real systems work at every layer.",
-      "I care about writing code that other people can maintain, building systems that fail gracefully, and asking the right questions before jumping into solutions. I hold a Master's in Software Engineering from the University of Houston–Clear Lake (3.93 GPA), a Bachelor's in IT from the University of Mumbai, and AWS Solutions Architect and Azure Administrator certifications. Based in Houston, TX and open to full-stack, backend, DevOps, and platform engineering roles.",
+      "Software engineer who builds across the full stack — product, infrastructure, and everything that makes it ship reliably. I've built workflow tools used by 40,000+ employees at IDFC FIRST Bank, led a VR research project at UHCL, and currently work at EVU closing infrastructure gaps that nobody else was tracking.",
+      "I care about code other people can maintain, systems that fail gracefully, and asking the right questions before diving in. M.S. Software Engineering, UHCL (3.93 GPA) · AWS Solutions Architect · Azure Administrator · Houston, TX.",
     ],
   },
   experience: [
